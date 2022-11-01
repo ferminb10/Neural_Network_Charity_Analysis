@@ -2,7 +2,7 @@
 To uncover success trends on applicants that are funded by Alphabet Soup using different machine learning strategies.
 
 ## Overview:
-The purpose of this project was to review a large set of data for a charity and use neural net machine learning to see if a reasonable model could be fit to the data.  The purpose of the model is to make a binary decision for whether or not the charity, Alphabet Soup, should fund the request for aid from the requesting organization based upon chance of success.  The data provided for us to use consists of past charity data for over 34,000 organizations that have been previously funded by Alphabet Soup.  For the purposes of machine learning the tensorflow Python module was utilized along with scikitlearn.
+The purpose of this project was to review a large set of data for a charity and use a binary classification model to see if the features in the provided dataset to help Beks predict whether applicants will be successful if funded by Alphabet Soup. From Alphabet Soup’s business team, Beks received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization.  For the machine learning part, tensorflow will be utilized along with scikitlearn.
 
 ## Results
 - What variable(s) are considered the target(s) for your model?
@@ -21,9 +21,9 @@ The purpose of this project was to review a large set of data for a charity and 
 - Were you able to achieve the target model performance?
   - Sadly I was unable to reach the target performance level even after making several adjustments.
     - Initial run had an accuracy of 72.21%
-    - The first optimization run had an accuracy of 72.52%.
-    - The 2nd optimization run had an accuracy of 72.12%.
-    - The final optimization attempt had an accuracy of 72.42%.
+    - The first optimization run had an accuracy of 77.81%.
+    - The 2nd optimization run had an accuracy of 77.61%.
+    - The final optimization attempt had an accuracy of 77.66%.
 
 ## Summary
 
