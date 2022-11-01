@@ -20,10 +20,10 @@ The purpose of this project was to review a large set of data for a charity and 
   
 - Were you able to achieve the target model performance?
   - Sadly I was unable to reach the target performance level even after making several adjustments.
-    - Initial run had an accuracy of 69.4%
-    - The first optimization run had an accuracy of 71%.
-    - The 2nd optimization run had an accuracy of 46.8%.  A disappointing drop in accuracy.  For this one I tried increasing the number of units in each layer.
-    - The final optimization attempt had an accuracy of 71.2%.  For this one I added a few extra neural layers.
+    - Initial run had an accuracy of 72.21%
+    - The first optimization run had an accuracy of 72.52%.
+    - The 2nd optimization run had an accuracy of 72.12%.
+    - The final optimization attempt had an accuracy of 72.42%.
 
 ## Summary
 
