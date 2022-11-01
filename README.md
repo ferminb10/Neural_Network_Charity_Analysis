@@ -16,15 +16,15 @@ The purpose of this project was to review a large set of data for a charity and 
   - Initially, variables EIN and Name were removed from the data after importing the csv because they are neither features or targets for the model. Name was added in the optimization exercize, which drastically improved model performance.
   
 - How many neurons, layers, and activation functions did you select for your neural network model, and why?
-  - For the original model I chose to go with a sigmoid activation with 80 units as the first hidden layer, a relu activation with 30 units for the 2nd hidden layer, and for the output a linear activation with 1 unit.  I chose 80 as the starting hidden layer due to the 2-3 times your input guideline as a starter model.  I chose sigmoid and relu after playing around a bit to see which gave better initial results.
+  - For the original model I chose to go with a sigmoid activation with 100 units as the first hidden layer, a relu activation with 20 units for the 2nd hidden layer, and for the output a linear activation with 1 unit.  I chose 100 as the starting hidden layer because I wanted to rough have twice as many neurons as my input shape.  I chose sigmoid and relu because these are the activation functions typically used in binary classification models.
   
 - Were you able to achieve the target model performance?
-  - Sadly I was unable to reach the target performance level even after making several adjustments.
-    - Initial run had an accuracy of 72.21%
+  - I was able to reach the target performance level after optimization after tweaking the model and making adjustments.
+    - Initial run had an accuracy of 72.31%
     - The first optimization run had an accuracy of 77.81%.
     - The 2nd optimization run had an accuracy of 77.61%.
     - The final optimization attempt had an accuracy of 77.66%.
 
 ## Summary
 
-In conclusion, using the nueral net machine learning I was unable to get results above 71.2% despite making several tweaks to the model itself.  In the future, I might have more luck looking for noisy data and removing it.  Something else to consider is trying a more basic machine learning model first.  I would suggest trying the balanced forest classifier as it is good at making binary decisions.  If that didn't pan out, then perhaps try the nueral net machine learning again.
+In conclusion, I was unable to get results above 75% after making several tweaks to the model. I suggest experimenting with the entire dataset to see if there is improvements. It was helpful to look at online resources for which activation functions are the best for binary models and how many neurons to use for each layer.
