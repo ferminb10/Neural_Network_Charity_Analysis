@@ -7,13 +7,13 @@ The purpose of this project was to review a large set of data for a charity and 
 ## Results
 - What variable(s) are considered the target(s) for your model?
 
-  - The IS_SUCCESSFUL category from the csv was the target of the constructed model.  If the value is 1, the request was successful, 0 if it was not.
+  - The target variable that forms the basis of our model is the IS_SUCCESSFUL category pulled from the charity.csv.  If the value = 1, the request was successful, and 0 if it was not.
 
 - What variable(s) are considered to be the features for your model?
-  - The variables which are considered features for the model are application type, affilation, classification, use case, organization, income amount, special considerations, and asking amount.  The categorical variables here were given to OneHotEncoder to transform into useable data.
+  - Initially the variables considered features for the model are application type, affilation, classification, use case, organization, income amount, special considerations, and asking amount, but for the optimization part I incoperated name and achieved results above 75%.  Categorical variables here were through OneHotEncoder which were transformed into useable data.
   
 - What variable(s) are neither targets nor features, and should be removed from the input data? 
-  - The variables EIN and Name were removed from the data after importing the csv because they are neither features or targets for the nn model.
+  - Initially, variables EIN and Name were removed from the data after importing the csv because they are neither features or targets for the model. Name was added in the optimization exercize, which drastically improved model performance.
   
 - How many neurons, layers, and activation functions did you select for your neural network model, and why?
   - For the original model I chose to go with a sigmoid activation with 80 units as the first hidden layer, a relu activation with 30 units for the 2nd hidden layer, and for the output a linear activation with 1 unit.  I chose 80 as the starting hidden layer due to the 2-3 times your input guideline as a starter model.  I chose sigmoid and relu after playing around a bit to see which gave better initial results.
